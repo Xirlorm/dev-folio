@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@media screen and (max-width: 480px) {
+  header {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  header nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: .1rem;
+  }
+}
+
+nav {
+  font-weight: 500;
+}
+
+nav a {
+  display: flex;
+  font-size: 0.9rem;
+  align-items: center;
+}
+
+.nav-icon {
+  width: .9rem;
+}
+
+.active-page {
+  /* @apply rounded-md;
+  @apply bg-blue-200; */
+  @apply text-blue-800;
+}
+
+.tech {
+  @apply font-bold;
+}
+
+.tech-icons {
+  @apply text-3xl;
+}
