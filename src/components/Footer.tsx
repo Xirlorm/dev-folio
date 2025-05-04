@@ -3,11 +3,11 @@ import { GitHub, Heart, Linkedin, Mail } from "react-feather";
 
 function Footer() {
   return (
-    <footer className="border-t-2 border-t-gray-300 py-6 px-3">
+    <footer className="border-t-2 border-t-gray-300 py-6 px-3 mt-6">
       <div className="">
         <p>
           &copy;2025{" "}
-          <span className="text-shadow-stone-400 text-shadow-sm font-bold">
+          <span className="text-shadow-stone-300 text-shadow-lg font-bold">
             &lt;Selorm/&gt;
           </span>. <br />
           All rights reserved.

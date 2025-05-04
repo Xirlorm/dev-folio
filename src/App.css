@@ -10,8 +10,38 @@
     flex: 1;
     display: flex;
     justify-content: space-between;
-    gap: .1rem;
+    gap: 0.1rem;
   }
+
+  .tech-stack {
+    justify-content: space-evenly;
+  }
+}
+
+#root,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer > div,
+header {
+  width: clamp(10px, 780px, 100%);
+}
+
+#root > div,
+header {
+  max-width: 780px;
+}
+
+#root > footer {
+  flex: 1;
+  width: 100%;
+}
+
+#root > div {
+  max-width: 780px;
 }
 
 nav {
@@ -25,7 +55,7 @@ nav a {
 }
 
 .nav-icon {
-  width: .9rem;
+  width: 0.9rem;
 }
 
 .active-page {
@@ -34,10 +64,82 @@ nav a {
   @apply text-blue-800;
 }
 
-.tech {
-  @apply font-bold;
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  margin: 1rem;
 }
 
-.tech-icons {
-  @apply text-3xl;
+.tech {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  @apply gap-0.5;
+  @apply rounded-sm;
+  @apply px-1.5 py-1;
+  @apply transition-transform;
+  @apply duration-300;
+  @apply ease-out;
+  @apply transform;
+  @apply hover:scale-115;
+  @apply hover:text-shadow-stone-300;
+  @apply hover:text-shadow-lg;
+  @apply hover:bg-stone-200;
+  will-change: transform;
+  user-select: none;
+}
+
+.tech-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.tech-icon,
+.tech-name {
+  display: inline-block;
+  vertical-align: middle
+}
+
+.contacts {
+  @apply mt-5;
+}
+
+.contacts a {
+  @apply text-stone-600;
+  @apply text-shadow-stone-300;
+  @apply text-shadow-lg;
+}
+
+.contacts ul {
+  @apply flex;
+  @apply flex-wrap;
+  @apply justify-evenly;
+  @apply text-center;
+  @apply gap-4;
+  @apply font-bold;
+  @apply mt-4;
+}
+
+.contacts a {
+  @apply p-1.5;
+  @apply border-transparent;
+  @apply border-1;
+  @apply border-black;
+  @apply rounded-md;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @apply gap-1.5;
+  @apply transition-transform;
+  @apply duration-300;
+  @apply ease-out;
+  @apply transform;
+  @apply hover:scale-115;
+  @apply hover:border-solid;
+  @apply hover:border-blue-400;
+  @apply hover:text-blue-400;
+  will-change: transform;
+  min-width: 5rem;
 }

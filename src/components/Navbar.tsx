@@ -25,13 +25,13 @@ function Navbar() {
         &nbsp;Projects
       </Link>
       <span>&nbsp;·&nbsp;</span>
-      <Link
-        to="contact"
+      <a
+        href="/#contacts"
         className={activePage == "contact" ? "active-page" : ""}
       >
         <MessageSquare className="nav-icon" />
         &nbsp;Contact
-      </Link>
+      </a>
     </nav>
   );
 }
