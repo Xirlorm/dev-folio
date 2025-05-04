@@ -25,15 +25,9 @@ function Home() {
     <div className="m-2 my-8 text-stone-700">
       <h1 className="text-4xl">
         Hello,
-        <br /> I'm{" "}
-        <span className="italic text-shadow-sm text-shadow-stone-400">
-          Selorm
-        </span>
-        ! 😸
+        <br /> I'm <span className="italic">Selorm</span>!
       </h1>
-      <h3 className="text-2xl font-extrabold italic text-shadow-sm text-shadow-stone-400">
-        A Frontend Developer.
-      </h3>
+      <h3 className="text-2xl font-extrabold italic">A Frontend Developer.</h3>
       <p className="my-6">
         I am a frontend developer with a passion for creating beautiful✨ and
         functional web applications. I love to learn new technologies and
@@ -45,8 +39,17 @@ function Home() {
       </h3>
       <ul className="techs flex flex-wrap justify-center gap-4 p-1.5 py-5">
         {icons.map((icon) => (
-          <li key={icon.name} className="flex items-center transition-transform duration-300 ease-out transform hover:scale-115 hover:text-shadow-stone-400 hover:text-shadow-sm">
-            <Icon className="tech shrink-0" icon={icon.icon} width="32" height="32" />&nbsp;
+          <li
+            key={icon.name}
+            className="flex items-center transition-transform duration-300 ease-out transform hover:scale-115 hover:text-shadow-stone-400 hover:text-shadow-sm"
+          >
+            <Icon
+              className="tech shrink-0"
+              icon={icon.icon}
+              width="32"
+              height="32"
+            />
+            &nbsp;
             <span className="text-sm font-semibold">{icon.name}</span>
           </li>
         ))}
