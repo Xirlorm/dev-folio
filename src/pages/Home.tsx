@@ -1,5 +1,6 @@
 import { Icon } from "@iconify-icon/react";
 import { Link, Links } from "react-router-dom";
+import Skill from "../components/Skill";
 
 function Home() {
   const icons = [
@@ -44,15 +45,7 @@ function Home() {
         <h3 className="text-2xl font-extrabold">My Tech Stack</h3>
         <ul className="tech-stack">
           {icons.map((icon) => (
-            <li key={icon.name} className="tech">
-              <Icon
-                className="tech-icon"
-                icon={icon.icon}
-                width="32"
-                height="32"
-              />
-              <div className="tech-name text-sm font-bold">{icon.name}</div>
-            </li>
+            <Skill icon={icon} />
           ))}
         </ul>
       </section>
@@ -64,41 +57,25 @@ function Home() {
         <ul className="">
           <li>
             <Link to="">
-              <Icon
-                icon="simple-icons:reddit"
-                width={28}
-                height={28}
-              />
+              <Icon icon="simple-icons:reddit" width={28} height={28} />
               <h3>Reddit</h3>
             </Link>
           </li>
           <li>
             <Link to="">
-              <Icon
-                icon="simple-icons:linkedin"
-                width={28}
-                height={28}
-              />
+              <Icon icon="simple-icons:linkedin" width={28} height={28} />
               <h3>LinkedIn</h3>
             </Link>
           </li>
           <li>
             <Link to="">
-              <Icon
-                icon="simple-icons:x"
-                width={28}
-                height={28}
-              />
+              <Icon icon="simple-icons:x" width={28} height={28} />
               <h3>Twitter</h3>
             </Link>
           </li>
           <li>
             <Link to="mailto:https://xirlorm@gmail.com">
-              <Icon
-                icon="simple-icons:gmail"
-                width={28}
-                height={28}
-              />
+              <Icon icon="simple-icons:gmail" width={28} height={28} />
               <h3>Email</h3>
             </Link>
           </li>
