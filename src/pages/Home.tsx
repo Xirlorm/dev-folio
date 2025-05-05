@@ -34,11 +34,10 @@ function Home() {
           A <span className="text-gray-400">Frontend Developer</span>.
         </h3>
         <p className="my-4">
-          👋 I'm a frontend developer with a passion for creating beautiful✨
+          👋 I'm a front-end web developer with a passion for creating beautiful✨
           and functional⚙️ web applications... I love learning new technologies
-          and improving my skills💪. On my journey🚀 to become a full-stack
-          developer, I am currently learning Java and Spring Boot, hoping to
-          expand my knowledge😼.
+          and improving my skills💪. I'm on a journey🚀 to become a full-stack
+          developer, I am currently learning Java and Spring Boot.
         </p>
       </section>
       <section>
