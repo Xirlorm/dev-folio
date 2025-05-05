@@ -1,23 +1,5 @@
 @import "tailwindcss";
 
-@media screen and (max-width: 480px) {
-  header {
-    align-items: center;
-    gap: 1rem;
-  }
-
-  header nav {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    gap: 0.1rem;
-  }
-
-  .tech-stack {
-    justify-content: space-evenly;
-  }
-}
-
 #root,
 footer {
   display: flex;
@@ -142,4 +124,32 @@ nav a {
   @apply hover:text-blue-400;
   will-change: transform;
   min-width: 5rem;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  header nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.1rem;
+  }
+
+  .tech-stack {
+    justify-content: space-around;
+  }
+
+  .contacts li {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 388px) {
+  .contacts li {
+    flex: none;
+  }
 }
