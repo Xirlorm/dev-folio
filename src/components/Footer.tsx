@@ -1,5 +1,5 @@
 import { Icon } from "@iconify-icon/react/dist/iconify.mjs";
-import { GitHub, Heart, Linkedin, Mail } from "react-feather";
+import { Heart } from "react-feather";
 
 function Footer() {
   return (
