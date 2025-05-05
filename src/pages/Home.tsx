@@ -51,6 +51,12 @@ function Home() {
       <section className="font-extrabold text-md my-2">
         👉 <Link to="/about">Read more about me</Link>
       </section>
+      <section className="my-6 ">
+        <h3 className="text-2xl font-extrabold">Featured Projects</h3>
+        <div className="bg-gray-100 p-1.5 rounded-sm flex justify-center">
+          Coming soon...
+        </div>
+      </section>
       <section id="contacts" className="contacts">
         <h3 className="text-2xl font-extrabold my-2">How do you reach me?</h3>
         <ul className="">
