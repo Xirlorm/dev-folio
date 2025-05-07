@@ -61,7 +61,7 @@ function Home() {
         <h3 className="text-2xl font-extrabold my-2">How do you reach me?</h3>
         <ul className="">
           <li>
-            <Link to="">
+            <Link to="https://www.reddit.com/user/xirlohm">
               <Icon
                 className="contact-icon"
                 icon="simple-icons:reddit"
@@ -72,7 +72,7 @@ function Home() {
             </Link>
           </li>
           <li>
-            <Link to="">
+            <Link to="https://www.linkedin.com/in/xirlorm">
               <Icon
                 className="contact-icon"
                 icon="simple-icons:linkedin"
@@ -83,14 +83,14 @@ function Home() {
             </Link>
           </li>
           <li>
-            <Link to="">
+            <Link to="https://x.com/Xirlorm">
               <Icon
                 className="contact-icon"
                 icon="simple-icons:x"
                 width="28"
                 height="28"
               />
-              <h3>Twitter</h3>
+              <h3>X</h3>
             </Link>
           </li>
           <li>
