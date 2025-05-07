@@ -1,25 +1,13 @@
-import React from 'react';
+import React from "react";
 
 const Projects: React.FC = () => {
-    const dummyProjects = [
-        { id: 1, name: 'Project Alpha', description: 'This is a description for Project Alpha.' },
-        { id: 2, name: 'Project Beta', description: 'This is a description for Project Beta.' },
-        { id: 3, name: 'Project Gamma', description: 'This is a description for Project Gamma.' },
-    ];
+  const dummyProjects = [];
 
-    return (
-        <div>
-            <h1>Projects</h1>
-            <ul>
-                {dummyProjects.map((project) => (
-                    <li key={project.id}>
-                        <h2>{project.name}</h2>
-                        <p>{project.description}</p>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
+  return (
+    <div className="bg-gray-200 rounded-sm py-3 text-3xl my-4 text-center">
+      <h3>Coming soon...</h3>
+    </div>
+  );
 };
 
 export default Projects;
