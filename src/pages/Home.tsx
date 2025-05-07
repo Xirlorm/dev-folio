@@ -1,5 +1,5 @@
 import { Icon } from "@iconify-icon/react";
-import { Link, Links } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Skill from "../components/Skill";
 
 function Home() {
@@ -24,7 +24,7 @@ function Home() {
   ];
 
   return (
-    <div className="m-2 text-stone-700 flex flex-col gap-4">
+    <div className="m-0 text-stone-700 flex flex-col gap-4">
       <section className="my-6">
         <h1 className="text-4xl">
           Hello,
@@ -34,10 +34,10 @@ function Home() {
           A <span className="text-gray-400">Frontend Developer</span>.
         </h3>
         <p className="my-4">
-          👋 I'm a front-end web developer with a passion for creating beautiful✨
-          and functional⚙️ web applications... I love learning new technologies
-          and improving my skills💪. I'm on a journey🚀 to become a full-stack
-          developer, I am currently learning Java and Spring Boot.
+          👋 I'm a front-end web developer with a passion for creating
+          beautiful✨ and functional⚙️ web applications... I love learning new
+          technologies and improving my skills💪. I'm on a journey🚀 to become a
+          full-stack developer, I am currently learning Java and Spring Boot.
         </p>
       </section>
       <section>
@@ -62,25 +62,45 @@ function Home() {
         <ul className="">
           <li>
             <Link to="">
-              <Icon icon="simple-icons:reddit" width={28} height={28} />
+              <Icon
+                className="contact-icon"
+                icon="simple-icons:reddit"
+                width="28"
+                height="28"
+              />
               <h3>Reddit</h3>
             </Link>
           </li>
           <li>
             <Link to="">
-              <Icon icon="simple-icons:linkedin" width={28} height={28} />
+              <Icon
+                className="contact-icon"
+                icon="simple-icons:linkedin"
+                width="28"
+                height="28"
+              />
               <h3>LinkedIn</h3>
             </Link>
           </li>
           <li>
             <Link to="">
-              <Icon icon="simple-icons:x" width={28} height={28} />
+              <Icon
+                className="contact-icon"
+                icon="simple-icons:x"
+                width="28"
+                height="28"
+              />
               <h3>Twitter</h3>
             </Link>
           </li>
           <li>
             <Link to="mailto:https://xirlorm@gmail.com">
-              <Icon icon="simple-icons:gmail" width={28} height={28} />
+              <Icon
+                className="contact-icon"
+                icon="simple-icons:gmail"
+                width="28"
+                height="28"
+              />
               <h3>Email</h3>
             </Link>
           </li>

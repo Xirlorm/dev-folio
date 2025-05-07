@@ -1,5 +1,58 @@
 @import "tailwindcss";
 
+@media (max-width: 420px) {
+  nav .nav-icon {
+    display: none;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .tech-stack {
+    justify-content: space-around;
+  }
+
+  header,
+  footer {
+    @apply self-stretch;
+  }
+}
+
+@media (min-width: 768px) {
+  header,
+  #root > div,
+  footer {
+    width: clamp(320px, 75%, 100%);
+  }
+}
+
+@media (max-width: 320px) {
+  .contacts li {
+    min-width: 180px;
+    @apply flex-1;
+  }
+
+  header nav {
+    gap: 1px;
+  }
+}
+
+@media (max-width: 543) {
+  header nav a {
+    width: 100%;
+  }
+}
+
+header,
+#root > div,
+footer {
+  @apply p-2;
+}
+
+header {
+  @apply pb-0;
+}
+
 #root,
 footer {
   display: flex;
@@ -7,27 +60,14 @@ footer {
   align-items: center;
 }
 
-footer > div,
-header {
-  width: clamp(10px, 780px, 100%);
-}
-
-#root > div,
-header {
-  max-width: 780px;
-}
-
-#root > footer {
-  flex: 1;
-  width: 100%;
-}
-
+footer ,
 #root > div {
-  max-width: 780px;
+  @apply items-stretch;
 }
 
 nav {
   font-weight: 500;
+  gap: 1rem;
 }
 
 nav a {
@@ -44,6 +84,9 @@ nav a {
   /* @apply rounded-md;
   @apply bg-blue-200; */
   @apply text-blue-800;
+  @apply border-solid;
+  @apply border-b-2;
+  @apply border-zinc-300;
 }
 
 .tech-stack {
@@ -74,14 +117,19 @@ nav a {
 }
 
 .tech-icon {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
+}
+
+.contact-icon {
+  width: 2rem;
+  height: 2rem;
+  color: black;
 }
 
 .tech-icon,
 .tech-name {
   display: inline-block;
-  vertical-align: middle
 }
 
 .contacts {
@@ -124,32 +172,4 @@ nav a {
   @apply hover:text-blue-400;
   will-change: transform;
   min-width: 5rem;
-}
-
-@media screen and (max-width: 480px) {
-  header {
-    align-items: center;
-    gap: 1rem;
-  }
-
-  header nav {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    gap: 0.1rem;
-  }
-
-  .tech-stack {
-    justify-content: space-around;
-  }
-
-  .contacts li {
-    flex: 1;
-  }
-}
-
-@media screen and (min-width: 388px) {
-  .contacts li {
-    flex: none;
-  }
 }

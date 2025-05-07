@@ -17,7 +17,7 @@ function Navbar() {
   }, [location]);
 
   return (
-    <nav className="sticky top-0 left-0 flex gap-2 font-extrabold p-1 m-0">
+    <nav className="sticky top-0 left-0 flex justify-between font-extrabold p-1 m-0">
       <Link
         to="/"
         className={activePage == "home" ? "active-page" : ""}

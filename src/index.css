@@ -13,12 +13,12 @@
 }
 
 a {
-  color: #646cff;
+  @apply text-blue-400;
   text-decoration: inherit;
 }
 
 a:hover {
-  color: #535bf2;
+  @apply text-blue-600;
 }
 
 body {
@@ -43,4 +43,10 @@ h1 {
   button {
     background-color: #f9f9f9;
   }
+}
+
+hr {
+  @apply w-full;
+  @apply text-gray-300;
+  @apply m-3.5;
 }
