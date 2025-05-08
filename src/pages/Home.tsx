@@ -24,14 +24,14 @@ function Home() {
   ];
 
   return (
-    <div className="m-0 text-stone-700 flex flex-col gap-4">
+    <div className="m-0 flex flex-col gap-4">
       <section className="my-6">
         <h1 className="text-4xl">
           Hello,
           <br /> I'm Selorm,
         </h1>
         <h3 className="text-2xl font-extrabold">
-          A <span className="text-gray-400">Frontend Developer</span>.
+          A <span className="text-gray-400 dark:text-zinc-400">Frontend Developer</span>.
         </h3>
         <p className="my-4">
           👋 I'm a front-end web developer with a passion for creating
@@ -53,7 +53,7 @@ function Home() {
       </section>
       <section className="my-6 ">
         <h3 className="text-2xl font-extrabold">Featured Projects</h3>
-        <div className="bg-gray-100 p-1.5 rounded-sm flex justify-center">
+        <div className="bg-gray-100 dark:bg-zinc-600 p-1.5 rounded-sm flex justify-center">
           Coming soon...
         </div>
       </section>

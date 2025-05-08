@@ -87,6 +87,8 @@ nav a {
   @apply border-solid;
   @apply border-b-2;
   @apply border-zinc-300;
+  @apply dark:text-blue-200;
+  @apply dark:border-zinc-400;
 }
 
 .tech-stack {
@@ -112,6 +114,8 @@ nav a {
   @apply hover:text-shadow-stone-300;
   @apply hover:text-shadow-lg;
   @apply hover:bg-stone-200;
+  @apply hover:dark:text-shadow-stone-700;
+  @apply hover:dark:bg-zinc-500;
   will-change: transform;
   user-select: none;
 }
@@ -124,7 +128,8 @@ nav a {
 .contact-icon {
   width: 2rem;
   height: 2rem;
-  color: black;
+  @apply text-black;
+  @apply dark:text-white;
 }
 
 .tech-icon,
@@ -134,12 +139,6 @@ nav a {
 
 .contacts {
   @apply mt-5;
-}
-
-.contacts a {
-  @apply text-stone-600;
-  @apply text-shadow-stone-300;
-  @apply text-shadow-lg;
 }
 
 .contacts ul {
@@ -153,10 +152,16 @@ nav a {
 }
 
 .contacts a {
+  @apply text-stone-600;
+  @apply text-shadow-stone-300;
+  @apply dark:text-white;
+  @apply dark:text-shadow-stone-700;
+  @apply text-shadow-lg;
   @apply p-1.5;
   @apply border-transparent;
   @apply border-1;
   @apply border-black;
+  @apply dark:border-white;
   @apply rounded-md;
   display: flex;
   justify-content: center;
