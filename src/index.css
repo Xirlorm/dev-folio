@@ -53,3 +53,183 @@ hr {
   @apply text-gray-300;
   @apply m-3.5;
 }
+@import "tailwindcss";
+
+@media (max-width: 420px) {
+  nav .nav-icon {
+    display: none;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .tech-stack {
+    justify-content: space-around;
+  }
+
+  header,
+  footer {
+    @apply self-stretch;
+  }
+}
+
+@media (min-width: 768px) {
+  header,
+  #root > div,
+  footer {
+    width: clamp(320px, 75%, 100%);
+  }
+}
+
+@media (max-width: 320px) {
+  .contacts li {
+    min-width: 180px;
+    @apply flex-1;
+  }
+
+  header nav {
+    gap: 1px;
+  }
+}
+
+@media (max-width: 543) {
+  header nav a {
+    width: 100%;
+  }
+}
+
+header,
+#root > div,
+footer {
+  @apply p-2;
+}
+
+header {
+  @apply pb-0;
+}
+
+#root,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer ,
+#root > div {
+  @apply items-stretch;
+}
+
+nav {
+  font-weight: 500;
+  gap: 1rem;
+}
+
+nav a {
+  display: flex;
+  font-size: 0.9rem;
+  align-items: center;
+}
+
+.nav-icon {
+  width: 0.9rem;
+}
+
+.active-page {
+  /* @apply rounded-md;
+  @apply bg-blue-200; */
+  @apply text-blue-800;
+  @apply border-solid;
+  @apply border-b-2;
+  @apply border-zinc-300;
+  @apply dark:text-blue-200;
+  @apply dark:border-zinc-400;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.tech {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  @apply gap-0.5;
+  @apply rounded-sm;
+  @apply px-1.5 py-1;
+  @apply transition-transform;
+  @apply duration-300;
+  @apply ease-out;
+  @apply transform;
+  @apply hover:scale-115;
+  @apply hover:text-shadow-stone-300;
+  @apply hover:text-shadow-lg;
+  @apply hover:bg-stone-200;
+  @apply hover:dark:text-shadow-stone-700;
+  @apply hover:dark:bg-zinc-500;
+  will-change: transform;
+  user-select: none;
+}
+
+.tech-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.contact-icon {
+  width: 2rem;
+  height: 2rem;
+  @apply text-black;
+  @apply dark:text-white;
+}
+
+.tech-icon,
+.tech-name {
+  display: inline-block;
+}
+
+.contacts {
+  @apply mt-5;
+}
+
+.contacts ul {
+  @apply flex;
+  @apply flex-wrap;
+  @apply justify-evenly;
+  @apply text-center;
+  @apply gap-4;
+  @apply font-bold;
+  @apply mt-4;
+}
+
+.contacts a {
+  @apply text-stone-600;
+  @apply text-shadow-stone-300;
+  @apply dark:text-white;
+  @apply dark:text-shadow-stone-700;
+  @apply text-shadow-lg;
+  @apply p-1.5;
+  @apply border-transparent;
+  @apply border-1;
+  @apply border-black;
+  @apply dark:border-white;
+  @apply rounded-md;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @apply gap-1.5;
+  @apply transition-transform;
+  @apply duration-300;
+  @apply ease-out;
+  @apply transform;
+  @apply hover:scale-115;
+  @apply hover:border-solid;
+  @apply hover:border-blue-400;
+  @apply hover:text-blue-400;
+  will-change: transform;
+  min-width: 5rem;
+}
