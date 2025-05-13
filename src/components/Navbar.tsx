@@ -17,7 +17,7 @@ function Navbar() {
   }, [location]);
 
   return (
-    <nav className="sticky top-0 left-0 flex justify-between font-extrabold p-1 m-0">
+    <nav>
       <Link
         to="/"
         className={activePage == "home" ? "active-page" : ""}
@@ -25,8 +25,7 @@ function Navbar() {
       >
         <Home className="nav-icon" />
         &nbsp;Home
-      </Link>
-      <span>&nbsp;·&nbsp;</span>
+      </Link>·
       <Link
         to="/about"
         className={activePage == "about" ? "active-page" : ""}
@@ -34,17 +33,15 @@ function Navbar() {
       >
         <User className="nav-icon" />
         &nbsp;About
-      </Link>
-      <span>&nbsp;·&nbsp;</span>
+      </Link>·
       <Link
         to="/projects"
         className={activePage == "projects" ? "active-page" : ""}
         onClick={() => setActivePage("projects")}
       >
-        <Package className="nav-icon" />
+        <Package className="nav-icon"  />
         &nbsp;Projects
-      </Link>
-      <span>&nbsp;·&nbsp;</span>
+      </Link>·
       <a
         href="/#contacts"
         className={activePage == "contact" ? "active-page" : ""}

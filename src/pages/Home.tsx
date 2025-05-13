@@ -24,14 +24,18 @@ function Home() {
   ];
 
   return (
-    <div className="m-0 flex flex-col gap-4">
+    <div className="home">
       <section className="my-6">
         <h1 className="text-4xl">
           Hello,
           <br /> I'm Selorm,
         </h1>
-        <h3 className="text-2xl font-extrabold">
-          A <span className="text-gray-400 dark:text-zinc-400">Frontend Developer</span>.
+        <h3>
+          A{" "}
+          <span className="text-gray-400 dark:text-zinc-400">
+            Frontend Developer
+          </span>
+          .
         </h3>
         <p className="my-4">
           👋 I'm a front-end web developer with a passion for creating
@@ -41,7 +45,7 @@ function Home() {
         </p>
       </section>
       <section>
-        <h3 className="text-2xl font-extrabold">My Tech Stack</h3>
+        <h3>My Tech Stack</h3>
         <ul className="tech-stack">
           {icons.map((icon) => (
             <Skill icon={icon} />
@@ -51,24 +55,24 @@ function Home() {
       <section className="font-extrabold text-md my-2">
         👉 <Link to="/about">Read more about me</Link>
       </section>
-      <section className="my-6 ">
-        <h3 className="text-2xl font-extrabold">Featured Projects</h3>
-        <div className="bg-gray-100 dark:bg-zinc-600 p-1.5 rounded-sm flex justify-center">
-          Coming soon...
-        </div>
+      <section className="featured-projects">
+        <h3>Featured Projects</h3>
+        <div className="">Coming soon...</div>
       </section>
       <section id="contacts" className="contacts">
-        <h3 className="text-2xl font-extrabold my-2">How do you reach me?</h3>
-        <ul className="">
+        <h3>How do you reach me?</h3>
+        <ul>
+          {/* remove and place into own component, use loop to create them before showing them here.
+          Do same for tech stacks too */}
           <li>
             <Link to="https://www.reddit.com/user/xirlohm">
               <Icon
                 className="contact-icon"
                 icon="simple-icons:reddit"
-                width="28"
-                height="28"
+                height={28}
+                width={28}
               />
-              <h3>Reddit</h3>
+              Reddit
             </Link>
           </li>
           <li>
@@ -76,10 +80,10 @@ function Home() {
               <Icon
                 className="contact-icon"
                 icon="simple-icons:linkedin"
-                width="28"
-                height="28"
+                height={28}
+                width={28}
               />
-              <h3>LinkedIn</h3>
+              LinkedIn
             </Link>
           </li>
           <li>
@@ -87,10 +91,10 @@ function Home() {
               <Icon
                 className="contact-icon"
                 icon="simple-icons:x"
-                width="28"
-                height="28"
+                height={28}
+                width={28}
               />
-              <h3>X</h3>
+              X
             </Link>
           </li>
           <li>
@@ -98,10 +102,10 @@ function Home() {
               <Icon
                 className="contact-icon"
                 icon="simple-icons:gmail"
-                width="28"
-                height="28"
+                height={28}
+                width={28}
               />
-              <h3>Email</h3>
+              Email
             </Link>
           </li>
         </ul>

@@ -3,10 +3,10 @@ import Note from "../components/Note";
 
 function About() {
   return (
-    <div>
-      <div className="mb-8">
-        <h2 className="font-bold text-xl">🧑‍💻 Who I am</h2>
-        <p className="mt-4">
+    <div className="about">
+      <div>
+        <h2>🧑‍💻 Who I am</h2>
+        <p>
           I'm a self-taught frontend developer driven by perseverance and
           curiosity. My passion for programming began in high school, paused
           after graduation, and reignited...without even having a PC.
@@ -27,11 +27,11 @@ function About() {
           or have a tech conversation!
         </Note>
       </div>
-      <div className="mb-8">
-        <h2 className="font-bold text-xl">🛠️ Tech Stack</h2>
-        <p className="mt-4">
+      <div>
+        <h2>🛠️ Tech Stack</h2>
+        <p>
           Here's a look at the tools I use and those I'm currently exploring:
-          <ul className="list-disc pl-5 mt-2 space-y-1">
+          <ul>
             <li>
               <strong>Languages:</strong> HTML, CSS, JavaScript, TypeScript
             </li>
@@ -54,9 +54,9 @@ function About() {
           </ul>
         </p>
       </div>
-      <div className="mb-8">
-        <h2 className="font-bold text-xl">🧠 My creative process</h2>
-        <p className="mt-4">
+      <div>
+        <h2>🧠 My creative process</h2>
+        <p>
           Sometimes I sketch out ideas on paper, other times I dive right into
           code... I let the moment guide me. When I hit the wall, I either do
           some research if needed or take a break to clear my mind. A walk or
@@ -69,10 +69,10 @@ function About() {
           something original.
         </p>
       </div>
-      <div className="mb-8">
-        <h2 className="font-bold text-xl">🚧 Current Focus</h2>
-        <p className="mt-4">
-          <ul className="list-disc pl-5 mt-2 space-y-1">
+      <div>
+        <h2>🚧 Current Focus</h2>
+        <p>
+          <ul>
             <li>Deepening my skills in React and component architecture</li>
             <li>
               Learning Java & Spring Boot to expand into full-stack development
@@ -82,9 +82,9 @@ function About() {
           </ul>
         </p>
       </div>
-      <div className="mb-4">
-        <h2 className="font-bold text-xl">🎨 Outside of code</h2>
-        <p className="mt-4">
+      <div>
+        <h2>🎨 Outside of code</h2>
+        <p>
           Beyond programming, I enjoy exploring and learning 3D modeling in
           Blender, learning to create digital art in GIMP which I hope would
           improve my works in web development, and experimenting with music in
