@@ -1,4 +1,4 @@
-import { Icon } from "@iconify-icon/react/dist/iconify.mjs";
+import { Icon } from "@iconify/react";
 import { Heart } from "react-feather";
 
 function Footer() {

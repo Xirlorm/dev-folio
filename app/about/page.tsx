@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
-import Note from "../components/Note";
+import Note from "@/ui/components/Note";
+import Link from "next/link";
 
 function About() {
   return (
-    <div className="about">
-      <div>
+    <main>
+      <section>
         <h2>🧑‍💻 Who I am</h2>
         <p>
-          I'm a self-taught frontend developer driven by perseverance and
+          I'm a self-taught frontend developer based in Ghana, driven by perseverance and
           curiosity. My passion for programming began in high school, paused
           after graduation, and reignited...without even having a PC.
           <br />
@@ -21,40 +21,39 @@ function About() {
           genuinely enjoy turning ideas into clean, functional code. There's
           nothing quite like seeing your thoughts come to life on screen.
         </p>
-        <Note>
-          I'm currently open to new opportunities, feel free to{" "}
-          <Link to="/#contacts">reach out</Link> if you'd like to work together
-          or have a tech conversation!
-        </Note>
-      </div>
-      <div>
+      </section>{" "}
+      <Note>
+        I'm currently open to new opportunities, feel free to{" "}
+        <Link href="/contact">reach out</Link> if you'd like to work together
+        or have a tech conversation!
+      </Note>
+      <section className="tech-stacks">
         <h2>🛠️ Tech Stack</h2>
-        <p>
+        <div>
           Here's a look at the tools I use and those I'm currently exploring:
-          <ul>
-            <li>
-              <strong>Languages:</strong> HTML, CSS, JavaScript, TypeScript
-            </li>
-            <li>
-              <strong>Frameworks & Libraries:</strong> React, Tailwind CSS, Sass
-            </li>
-            <li>
-              <strong>Version Control:</strong> Git, GitHub
-            </li>
-            <li>
-              <strong>Tools & Platforms:</strong> Vite, Webpack, VS Code,
-              Neovim, Netlify, Vercel
-            </li>
-            <li>
-              <strong>Operating Systems:</strong> Linux, Linux Mint, Ubuntu
-            </li>
-            <li>
-              <strong>In Progress:</strong> Next.js, Java, Spring Boot
-            </li>
-          </ul>
-        </p>
-      </div>
-      <div>
+          <div>
+            <strong>Languages</strong> <br /> HTML, CSS, JavaScript, TypeScript
+          </div>
+          <div>
+            <strong>Frameworks & Libraries</strong> <br /> React, Next.JS, Tailwind CSS,
+            Sass
+          </div>
+          <div>
+            <strong>Version Control</strong> <br /> Git, GitHub
+          </div>
+          <div>
+            <strong>Tools & Platforms</strong> <br /> Vite, Webpack, VS Code,
+            Neovim, Netlify, Vercel
+          </div>
+          <div>
+            <strong>Systems</strong> <br /> Linux, Linux Mint, Ubuntu
+          </div>
+          <div>
+            <strong>In Progress</strong> <br />Java, Spring Boot, Figma, GIMP, Inkscape
+          </div>
+        </div>
+      </section>
+      <section>
         <h2>🧠 My creative process</h2>
         <p>
           Sometimes I sketch out ideas on paper, other times I dive right into
@@ -68,10 +67,10 @@ function About() {
           ideas. It helps get the gears turning, but I always aim to create
           something original.
         </p>
-      </div>
-      <div>
+      </section>
+      <section>
         <h2>🚧 Current Focus</h2>
-        <p>
+        <div>
           <ul>
             <li>Deepening my skills in React and component architecture</li>
             <li>
@@ -80,9 +79,9 @@ function About() {
             <li>Exploring Framer Motion for smooth UI animation</li>
             <li>Building polished, responsive portfolio projects</li>
           </ul>
-        </p>
-      </div>
-      <div>
+        </div>
+      </section>
+      <section>
         <h2>🎨 Outside of code</h2>
         <p>
           Beyond programming, I enjoy exploring and learning 3D modeling in
@@ -90,8 +89,8 @@ function About() {
           improve my works in web development, and experimenting with music in
           LMMS. I love expressing creativity across different mediums.
         </p>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
 
