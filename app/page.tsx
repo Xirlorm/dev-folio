@@ -38,9 +38,9 @@ export default function Page() {
           .
         </h2>
         <p className="my-4">
-          👋 I'm a front-end web developer with a passion for creating
+          👋 I&apos;m a front-end web developer with a passion for creating
           beautiful✨ and functional⚙️ web applications... I love learning new
-          technologies and improving my skills💪. I'm on a journey🚀 to become a
+          technologies and improving my skills💪. I&apos;m on a journey🚀 to become a
           full-stack developer, I am currently learning Java and Spring Boot.
         </p>
       </section>
@@ -54,7 +54,7 @@ export default function Page() {
       </section>
       <section className="font-extrabold text-md my-2">
         Like what you see? 👀{" "}
-        <Link href="/about">Let's get acquainted</Link>
+        <Link href="/about">Let&apos;s get acquainted</Link>
       </section>
       <section className="featured-projects">
         <h2>Featured Projects</h2>

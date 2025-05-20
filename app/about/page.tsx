@@ -7,7 +7,7 @@ function About() {
       <section>
         <h2>🧑‍💻 Who I am</h2>
         <p>
-          I'm a self-taught frontend developer based in Ghana, driven by perseverance and
+          I&apos;m a self-taught frontend developer based in Ghana, driven by perseverance and
           curiosity. My passion for programming began in high school, paused
           after graduation, and reignited...without even having a PC.
           <br />
@@ -17,20 +17,20 @@ function About() {
           led to my first frontend job, and eventually, my first PC.
           <br />
           <br />
-          Whether I'm crafting sleek interfaces or exploring new tech, I
-          genuinely enjoy turning ideas into clean, functional code. There's
+          Whether I&apos;m crafting sleek interfaces or exploring new tech, I
+          genuinely enjoy turning ideas into clean, functional code. There&apos;s
           nothing quite like seeing your thoughts come to life on screen.
         </p>
       </section>{" "}
       <Note>
-        I'm currently open to new opportunities, feel free to{" "}
-        <Link href="/contact">reach out</Link> if you'd like to work together
+        I&apos;m currently open to new opportunities, feel free to{" "}
+        <Link href="/contact">reach out</Link> if you&apos;d like to work together
         or have a tech conversation!
       </Note>
       <section className="tech-stacks">
         <h2>🛠️ Tech Stack</h2>
         <div>
-          Here's a look at the tools I use and those I'm currently exploring:
+          Here&apos;s a look at the tools I use and those I&apos;m currently exploring:
           <div>
             <strong>Languages</strong> <br /> HTML, CSS, JavaScript, TypeScript
           </div>

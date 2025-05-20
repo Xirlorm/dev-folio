@@ -8,9 +8,9 @@ export default function Page() {
   return (
     <main>
       <section>
-        <h2>Let's connect!</h2>
+        <h2>Let&apos;s connect!</h2>
         <p>
-          I'm always open to new opportunities, collaborations, or freelance
+          I&apos;m always open to new opportunities, collaborations, or freelance
           work.
         </p>
       </section>
@@ -54,7 +54,7 @@ export default function Page() {
           <h3 className="flex items-center gap-1">
             <Icon icon="gis:poi" className="icon inline " /> Location
           </h3>
-          Based in Accra, Ghana, I'm available for remote work globally.
+          Based in Accra, Ghana, I&apos;m available for remote work globally.
         </Note>
       </section>
     </main>
