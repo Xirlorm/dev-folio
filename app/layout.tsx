@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import Header from "@/ui/Header";
-import "@/globals.css";
-import Footer from "./ui/Footer";
+import Header from "../ui/Header";
+import "../styles/globals.css";
+import Footer from "../ui/Footer";
+import AppContext from "../context/AppContext";
 
 export const metadata: Metadata = {
   title: "Dev-folio",
@@ -15,11 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="">
-      <body className=" antialiased">
-        <Header />
-        {children}
-        <hr className="m-2 text-gray-300" />
-        <Footer />
+      <body className="antialiased">
+        <AppContext>
+          <Header />
+          {children}
+          <hr className="m-2 text-gray-300" />
+          <Footer />
+        </AppContext>
       </body>
     </html>
   );

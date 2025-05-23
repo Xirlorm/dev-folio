@@ -6,7 +6,7 @@ function Footer() {
     <footer className="">
       <p>
         &copy;2025{" "}
-        <span className="text-shadow-stone-300 dark:text-shadow-stone-900 text-shadow-lg font-bold">
+        <span className="py-1 text-lg text-shadow-md text-shadow-stone-400 font-bold">
           &lt;Selorm/&gt;
         </span>
         . <br />

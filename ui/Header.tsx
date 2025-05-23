@@ -1,4 +1,4 @@
-import Navbar from "@/ui/components/Navbar";
+import Navbar from "../components/Navbar";
 
 function Header() {
   return (

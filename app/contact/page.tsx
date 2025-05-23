@@ -1,4 +1,4 @@
-import Note from "@/ui/components/Note";
+import Note from "../../components/Note";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Link from "next/link";
 
@@ -46,7 +46,7 @@ export default function Page() {
           <h3 className={contactHeadStyle}>
             <Icon icon="simple-icons:x" className="icon inline" /> X
           </h3>
-          <Link href="https://x.com/xirlohm">x.com/xirlohm</Link>
+          <Link href="https://x.com/xirlorm">x.com/xirlorm</Link>
         </div>
       </section>
       <section>

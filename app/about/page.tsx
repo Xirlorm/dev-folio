@@ -1,15 +1,22 @@
-import Note from "@/ui/components/Note";
+"use client";
+
+import Note from "../../components/Note";
 import Link from "next/link";
+import { useContext } from "react";
+import { UserContext } from "../../context/UserContext";
 
 function About() {
+  const { setActivePage } = useContext(UserContext);
+
   return (
     <main>
       <section>
         <h2>🧑‍💻 Who I am</h2>
         <p>
-          I&apos;m a self-taught frontend developer based in Ghana, driven by perseverance and
-          curiosity. My passion for programming began in high school, paused
-          after graduation, and reignited...without even having a PC.
+          I&apos;m a self-taught frontend developer based in Ghana, driven by
+          perseverance and curiosity. My passion for programming began in high
+          school, paused after graduation, and reignited...without even having a
+          PC.
           <br />
           <br />
           To keep learning, I turned to Termux, running Arch Linux on my Android
@@ -18,25 +25,29 @@ function About() {
           <br />
           <br />
           Whether I&apos;m crafting sleek interfaces or exploring new tech, I
-          genuinely enjoy turning ideas into clean, functional code. There&apos;s
-          nothing quite like seeing your thoughts come to life on screen.
+          genuinely enjoy turning ideas into clean, functional code.
+          There&apos;s nothing quite like seeing your thoughts come to life on
+          screen.
         </p>
       </section>{" "}
       <Note>
         I&apos;m currently open to new opportunities, feel free to{" "}
-        <Link href="/contact">reach out</Link> if you&apos;d like to work together
-        or have a tech conversation!
+        <Link href="/contact" onClick={() => setActivePage('/contact')}>
+          reach out
+        </Link>{" "}
+        if you&apos;d like to work together or have a tech conversation!
       </Note>
       <section className="tech-stacks">
         <h2>🛠️ Tech Stack</h2>
         <div>
-          Here&apos;s a look at the tools I use and those I&apos;m currently exploring:
+          Here&apos;s a look at the tools I use and those I&apos;m currently
+          exploring:
           <div>
             <strong>Languages</strong> <br /> HTML, CSS, JavaScript, TypeScript
           </div>
           <div>
-            <strong>Frameworks & Libraries</strong> <br /> React, Next.JS, Tailwind CSS,
-            Sass
+            <strong>Frameworks & Libraries</strong> <br /> React, Next.JS,
+            Tailwind CSS, Sass
           </div>
           <div>
             <strong>Version Control</strong> <br /> Git, GitHub
@@ -49,7 +60,8 @@ function About() {
             <strong>Systems</strong> <br /> Linux, Linux Mint, Ubuntu
           </div>
           <div>
-            <strong>In Progress</strong> <br />Java, Spring Boot, Figma, GIMP, Inkscape
+            <strong>In Progress</strong> <br />
+            Java, Spring Boot, Figma, GIMP, Inkscape
           </div>
         </div>
       </section>

@@ -1,8 +1,13 @@
+"use client";
+
 import { Icon } from "@iconify/react";
-import Skill from "@/ui/components/Skill";
 import Link from "next/link";
+import { useContext } from "react";
+import { UserContext } from "../context/UserContext";
+import Tech from "../components/Tech";
 
 export default function Page() {
+  const { setActivePage } = useContext(UserContext);
   const icons = [
     { icon: "devicon:html5", name: "HTML5" },
     { icon: "devicon:css3", name: "CSS3" },
@@ -40,21 +45,25 @@ export default function Page() {
         <p className="my-4">
           👋 I&apos;m a front-end web developer with a passion for creating
           beautiful✨ and functional⚙️ web applications... I love learning new
-          technologies and improving my skills💪. I&apos;m on a journey🚀 to become a
-          full-stack developer, I am currently learning Java and Spring Boot.
+          technologies and improving my skills💪. I&apos;m on a journey🚀 to
+          become a full-stack developer, I am currently learning Java and Spring
+          Boot.
         </p>
       </section>
       <section>
         <h2>My Tech Stack</h2>
         <ul className="tech-stack">
           {icons.map((icon) => (
-            <Skill icon={icon} key={icon.name} />
+            <Tech icon={icon} key={icon.name} />
           ))}
         </ul>
       </section>
-      <section className="font-extrabold text-md my-2">
-        Like what you see? 👀{" "}
-        <Link href="/about">Let&apos;s get acquainted</Link>
+      <section className="font-bold my-2">
+        Like what you see? 👀
+        <br />
+        <Link href="/about" onClick={() => setActivePage("/about")}>
+          Let&apos;s get acquainted
+        </Link>
       </section>
       <section className="featured-projects">
         <h2>Featured Projects</h2>

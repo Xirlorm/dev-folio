@@ -30,12 +30,21 @@ header {
   @apply z-20;
 }
 
-nav a {
+.nav-item {
+  @apply flex;
+  @apply items-center;
+  @apply px-1;
+  @apply py-0;
+  @apply font-bold;
+  @apply text-sm;
+  @apply hover:bg-blue-300;
+  @apply rounded-md;
   transition: background-color .35s ease-in-out;
 }
 
-nav a.active-tab {
-
+.nav-item.active {
+  @apply bg-blue-200;
+  @apply !text-blue-600
 }
 
 main,

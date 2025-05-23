@@ -6,7 +6,7 @@ interface SkillArg {
   icon: string;
 }
 
-export default function Skill({ icon}: { icon: SkillArg }) {
+export default function Tech({ icon}: { icon: SkillArg }) {
   return (
     <li className="tech flex items-center gap-0.5">
       <Icon className="tech-icon" icon={icon.icon}/>
