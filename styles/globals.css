@@ -218,16 +218,16 @@ nav a {
   align-items: center;
   flex-wrap: nowrap;
   gap: .125rem;
-  @apply rounded-sm;
+  @apply rounded-lg;
   @apply px-1.5 py-1;
   user-select: none;
   will-change: transform;
-  transition: background-color .35s ease-in-out;
+  transition: border .35s ease-in-out;
   @apply hover:text-shadow-stone-400;
-  @apply hover:text-shadow-lg;
-  @apply hover:bg-stone-200;
-  @apply hover:dark:text-shadow-stone-700;
-  @apply hover:dark:bg-gray-200;
+  @apply hover:text-shadow-md;
+  @apply hover:border-stone-900 hover:border-solid;
+  @apply border-transparent;
+  @apply border-2;
   @apply hover:scale-105;
 }
 
