@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Header from "../ui/Header";
 import "../styles/globals.css";
 import Footer from "../ui/Footer";
@@ -16,6 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="">
+      <SpeedInsights />
       <body className="antialiased">
         <AppContext>
           <Header />
