@@ -10,7 +10,7 @@ responsive. A reflection of my skills as a front-end developer.
 
 ## 📸 Preview
 
-![Portfolio Preview](./public/preview.png)
+![Portfolio Preview](./public/devfolio-preview.png)
 
 ## 🚀 Features
 
