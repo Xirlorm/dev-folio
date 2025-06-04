@@ -2,7 +2,7 @@
 
 Welcome to my personal developer portfolio. This site showcases who I am, what
 I do and with what technologies. Designed by me to be clean, simple and
-responsive. A reflection of my skills as a front-end developer.
+responsive. A reflection of my skills as a front-end web developer.
 
 ## 🔗 Live Site
 
@@ -13,6 +13,8 @@ responsive. A reflection of my skills as a front-end developer.
 ![Portfolio Preview](./public/devfolio-preview.png)
 
 ## 🚀 Features
+
+- Clean and simple user interface
 
 - Introductory homepage with tech stack overview
 
