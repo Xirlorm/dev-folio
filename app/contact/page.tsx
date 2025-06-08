@@ -1,6 +1,7 @@
-import Note from "../../components/Note";
+import Note from "../../components/ui/Note";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Link from "next/link";
+import { contacts } from "../../data/contacts";
 
 const contactHeadStyle = "block flex justify-center gap-2 items-center";
 
@@ -10,44 +11,21 @@ export default function Page() {
       <section>
         <h2>Let&apos;s connect!</h2>
         <p>
-          I&apos;m always open to new opportunities, collaborations, or freelance
-          work.
+          I&apos;m always open to new opportunities, collaborations, or
+          freelance work.
         </p>
       </section>
       <section className="md:flex md:flex-wrap md:justify-between text-center">
-        <div>
-          <h3 className={contactHeadStyle}>
-            <Icon icon="simple-icons:gmail" className="icon inline" /> Gmail
-          </h3>
-          <Link href="mailto:https://xirlorm@gmail.com">Xirlorm@gmail.com</Link>
-        </div>
-        <div>
-          <h3 className={contactHeadStyle}>
-            <Icon icon="simple-icons:linkedin" className="icon inline" />{" "}
-            LinkedIn
-          </h3>
-          <Link href="">linkedin/in/xirlorm</Link>
-        </div>
-        <div>
-          <h3 className={contactHeadStyle}>
-            <Icon icon="devicon-github" className="icon inline" /> Github
-          </h3>
-          <Link href="https://github.com/Xirlorm">github.com/Xirlorm</Link>
-        </div>
-        <div>
-          <h3 className={contactHeadStyle}>
-            <Icon icon="simple-icons:reddit" className="icon inline" /> Reddit
-          </h3>
-          <Link href="https://reddit.com/user/xirlohm">
-            reddit.com/user/xirlohm
-          </Link>
-        </div>
-        <div>
-          <h3 className={contactHeadStyle}>
-            <Icon icon="simple-icons:x" className="icon inline" /> X
-          </h3>
-          <Link href="https://x.com/xirlorm">x.com/xirlorm</Link>
-        </div>
+        {contacts.map((item) => (
+          <div key={item.name}>
+            <h3 className={contactHeadStyle}>
+              <Icon icon={item.icon} className="icon inline" /> {item.name}
+            </h3>
+            <Link href={item.link} target="_blank" rel="noopener noreferrer">
+              {item.link.replace(/https?:\/\//, "").replace(/www\./, "")}
+            </Link>
+          </div>
+        ))}
       </section>
       <section>
         <Note>

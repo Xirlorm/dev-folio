@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from "react";
-import { Theme, Page } from "../types/types";
+import { Theme, Page } from "./models";
 
-export interface Context {
+export interface AppContextType {
   theme: Theme;
   activePage: Page;
   setTheme: Dispatch<SetStateAction<Theme>>;

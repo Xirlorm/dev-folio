@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NavItem } from "../types/types";
+import { NavItem } from "../../types/models";
 
 export default function NavLink({
   pathname,

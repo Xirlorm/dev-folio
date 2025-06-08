@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Header from "../ui/Header";
+import Header from "../components/Header";
 import "../styles/globals.css";
-import Footer from "../ui/Footer";
+import Footer from "../components/Footer";
 import AppContext from "../context/AppContext";
 
 export const metadata: Metadata = {

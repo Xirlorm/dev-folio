@@ -1,12 +1,12 @@
 "use client";
 
-import Note from "../../components/Note";
+import Note from "../../components/ui/Note";
 import Link from "next/link";
 import { useContext } from "react";
-import { UserContext } from "../../context/UserContext";
+import { AppContext } from "../../context/AppContext";
 
 function About() {
-  const { setActivePage } = useContext(UserContext);
+  const { setActivePage } = useContext(AppContext);
 
   return (
     <main>

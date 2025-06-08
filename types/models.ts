@@ -5,7 +5,7 @@ export type Theme = "dark" | "light";
 export type Page = "/" | "/about" | "/projects" | "/contact";
 
 export interface NavItem {
-  href: Page,
-  label: string,
-  icon: ReactNode,
+  href: Page;
+  label: string;
+  icon: ReactNode;
 }

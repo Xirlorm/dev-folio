@@ -3,13 +3,13 @@
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 import { useContext } from "react";
-import { UserContext } from "../context/UserContext";
-import Tech from "../components/Tech";
-import { techStacks } from "../lib/techStacks";
-import { contacts } from "../lib/contacts";
+import { techStacks } from "../data/techStacks";
+import { contacts } from "../data/contacts";
+import Technologies from "../components/Technologies";
+import { AppContext } from "../context/AppContext";
 
 export default function Page() {
-  const { setActivePage } = useContext(UserContext);
+  const { setActivePage } = useContext(AppContext);
 
   return (
     <main className="home">
@@ -35,11 +35,7 @@ export default function Page() {
       </section>
       <section>
         <h2>My Tech Stack</h2>
-        <ul className="tech-stack">
-          {techStacks.map((icon) => (
-            <Tech icon={icon} key={icon.name} />
-          ))}
-        </ul>
+        <Technologies techStacks={techStacks} />
       </section>
       <section className="font-bold my-2">
         Like what you see? 👀

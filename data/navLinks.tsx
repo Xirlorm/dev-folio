@@ -1,5 +1,5 @@
 import { Home, MessageSquare, Package, User } from "react-feather";
-import { NavItem } from "../types/types";
+import { NavItem } from "../types/models";
 
 export const navItems: NavItem[] = [
   {
